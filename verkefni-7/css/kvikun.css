@@ -1,0 +1,80 @@
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Cedarville Cursive', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bæta við skugga fyrir betri sýnileika */
+  text-align: center;
+  z-index: 10;
+}
+
+
+/* Rúmmyndasýning ílát */
+#slideset6 {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  max-width: 840px; /* Passar við ætlaða breidd */
+  aspect-ratio: 16 / 9; /* Tryggir samræmt hlutfall */
+  margin: 0px auto; /* Miðja ramma myndasýningar */
+  overflow: hidden;
+  background: #ddd; /* Plássbakgrunnur fyrir myndir við hleðslu */
+}
+
+/* Einstök myndskeið */
+#slideset6 > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Falið í upphafi */
+  width: 100%; /* Full breidd */
+  height: 100%; /* Passar við hlutfall umbúða */
+  animation: autoplay6 12s infinite linear;
+}
+
+/* Meginrammi fyrir myndskeiðs animation */
+@keyframes autoplay6 {
+  0% { opacity: 0; }
+  8.33% { opacity: 1; }
+  33.33% { opacity: 1; }
+  41.66% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Tímaskipting fyrir hvert myndskeið */
+#slideset6 > *:nth-child(1) { animation-delay: 0s; }
+#slideset6 > *:nth-child(2) { animation-delay: 4s; }
+#slideset6 > *:nth-child(3) { animation-delay: 8s; }
+
+/* Myndstíll */
+#slideset6 div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Tryggir að myndin fylli umbúðirnar */
+  display: block;
+}
+
+/* Spjaldtölvur (601px til 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #slideset6 {
+    max-width: 100%;
+    aspect-ratio: 21 / 10; 
+  }
+}
+
+/* Skrifborð (1025px og stærra) */
+@media (min-width: 1025px) {
+  #slideset6 {
+    width: 100%; 
+    max-width: none; 
+    aspect-ratio: 16 / 9; 
+  }
+
+  .message {
+    font-size: 50px;
+  }
+}

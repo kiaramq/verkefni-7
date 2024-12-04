@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Blooms</title>
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="shop_css/menus copy.css">
+    <link rel="stylesheet" href="shop_css/popup copy.css">
+    <link rel="stylesheet" href="shop_css/footer copy.css">
+    <link rel="stylesheet" href="css/icomoon-5/style.css">
+    <link rel="stylesheet" href="shop_css/chatbox copy.css">
+    <link rel="stylesheet" href="shop_css/shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="menubar">
+    <!-- Hamburger Menu (for mobile) -->
+    <input type="checkbox" id="inputMenu" />
+    <label for="inputMenu" class="labelMenu">&#9776;</label>
+  
+    <!-- Top Menu Links (this section will be either vertical on mobile or horizontal on desktop) -->
+    <!-- Navbar -->
+    <div class="logo">
+      <a href="#" class="icon-coffeescript" aria-label="logo"></a>
+    </div>
+    <nav id="menu" class="topmenu">
+      <a href="index.html">Home</a>
+      <a href="index.html">Menu</a>
+      <a href="index.html">Coffee Shop</a>
+      <a href="#login">Login</a>
+      <a href="index.html">About Us</a>
+    </nav>
+  </section>
+  <!-- shop -->
+  <section class="shopping">
+    <div class="shop-image-container">
+      <a href="https://www.example.com">
+        <img src="images/cosmos bipinnatus.jpeg" alt="">
+      </a>
+      <a href="https://www.example.com" class="image-link">
+        <p class="heartBeat">Cosmos Bipinnatus</p>
+        <p>699 ISK</p>
+      </a>
+    </div>
+
+    <div class="shop-image-container">
+      <a href="https://www.example.com" class="image-link">
+        <img src="images/dahlia-variabilis.jpeg" alt="">
+        <p class="heartBeat">Dahlia Variabilis</p>
+        <p>699 ISK</p>
+      </a>
+    </div>
+
+    <div class="shop-image-container">
+      <a href="https://www.example.com" class="image-link">
+        <img src="images/nigella-hispanica.jpeg" alt="">
+        <p class="heartBeat">Nigella Hispanica</p>
+        <p>699 ISK</p>
+      </a>
+    </div>
+
+    <div class="shop-image-container">
+      <a href="https://www.example.com" class="image-link">
+        <img src="images/Nicotiana-Grandiflora.jpeg" alt="">
+        <p class="heartBeat">Nicotiana Grandiflora</p>
+        <p>699 ISK</p>
+      </a>
+    </div>
+
+    <div class="shop-image-container">
+      <a href="https://www.example.com" class="image-link">
+        <img src="images/phlox-drummondii.jpeg" alt="">
+        <p class="heartBeat">Phlox Drummondii</p>
+        <p>699 ISK</p>
+      </a>
+    </div>
+
+    <div class="shop-image-container">
+      <a href="https://www.example.com" class="image-link">
+        <img src="images/calendula.jpeg" alt="">
+        <p class="heartBeat">Calendula</p>
+        <p>699 ISK</p>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Opening Hours and Location next to each other -->
+      <div class="footer-info">
+        <h3>Opening Hours</h3>
+        <ul>
+          <li>Monday - Friday: 9:30 - 19:00</li>
+          <li>Saturday: 10:00 - 19:00</li>
+          <li>Sunday: 12:00 - 19:00</li>
+        </ul>
+      </div>
+  
+      <div class="address">
+        <h3>Our Location</h3>
+        <p>123 Brew & Blooms, Coffee City, CC 45678</p>
+      </div>
+    </div>
+  
+    <!-- Footer Bottom with Social Media Links -->
+    <div class="footer-bottom">
+      <div class="social-media">
+        <a href="#" class="icon-facebook2" aria-label="Facebook"></a>
+        <a href="#" class="icon-instagram" aria-label="Instagram"></a>
+        <a href="#" class="icon-x" aria-label="X"></a>
+      </div>
+    </div>
+  </footer>
+  
+  <!--pop up login form-->
+  <div id="login" class="overlay">
+    <div class="popup">
+      <h2>~Welcome~</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content two-column">
+        <!-- Login Form -->
+        <div class="form-column">
+          <form action="takk.html" method="get">
+            <fieldset>
+              <legend>Login</legend>
+              <p>
+                <label for="user">Username:</label>
+                <input type="text" id="user" name="user" required>
+              </p>
+              <p>
+                <label for="psw">Password:</label>
+                  <input type="password" id="psw" name="psw" required>
+              </p>
+              <p><input type="submit" value="Login"></p>
+            </fieldset>
+          </form>
+      </div>
+      <!-- Sign-Up Form -->
+      <div class="form-column">
+        <form action="signup.html" method="get">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <p>
+                  <label for="new-user">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                  <label for="email">Lastname:</label>
+                  <input type="text" id="lastname" name="lastname" required>
+                </p>
+                <p>
+                  <label for="new-psw">Email:</label>
+                  <input type="text" id="email" name="email" required>
+                </p>
+                <p>
+                  <label for="new-psw">Password:</label>
+                  <input type="password" id="psw" name="psw" required>
+                </p>
+                <p><input type="submit" value="Sign Up"></p>
+            </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
