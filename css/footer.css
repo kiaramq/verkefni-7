@@ -1,0 +1,174 @@
+/* Stíll á container */
+.col-2 {
+  padding: 40px 20px; /* Bætir við rými í kringum deildina */
+  background-color: #47200B; /* Ljós bakgrunnur fyrir meiri andstæða */
+  font-family: 'Roboto', sans-serif; /* Hrein, nútímaleg leturgerð */
+  color: #333; /* Venjulegur textalitur */
+  line-height: 1.6; /* Bætir lesanleika */
+}
+
+.container {
+  max-width: 900px; /* Takmarkar breidd efnisins */
+  margin: 0 auto; /* Miðjar efnið */
+  padding: 20px;
+  background-color: #CDA38B; /* Hvítur bakgrunnur fyrir efnið */
+  border-radius: 10px; /* Rundir horn */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Fín skuggi fyrir dýpt */
+}
+
+/* Stíll fyrir fyrirsagnir */
+.about-us h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #384937; /* Mjúkt grænt fyrir fyrirsagnir */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-us h2 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4CAF50; /* Undirstrikun fyrir áherslu */
+  padding-bottom: 5px;
+}
+
+/* Stíll fyrir texta */
+.about-us p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Stíll fyrir áberandi texta */
+.highlight {
+  color: #384937; /* Hlýtt rauðleit tón fyrir áherslu */
+  font-weight: bold;
+}
+
+/* Bætir við fínni bilum milli deilda */
+.about-us section {
+  margin-bottom: 40px;
+}
+
+/* Hnappur fyrir Call to Action (valfrjálst) */
+.about-us p:last-child {
+  text-align: center;
+}
+
+.about-us a.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.about-us a.cta-button:hover {
+  background-color: #388E3C; 
+}
+
+/* Alheimsstíll fyrir footer */
+.footer {
+  background-color: #384937;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Container fyrir footer efni - Mobile Default */
+.footer-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 5px; 
+}
+
+/* Footer upplýsingar (Opnunartímar) og staðsetning - Mobile Default */
+.footer-info,
+.address {
+  text-align: center; 
+  width: 100%; 
+  margin: 0;
+}
+
+/* Footer upplýsingar (Opnunartímar) og staðsetning fyrirsagnir */
+.footer-info h3,
+.address h3 {
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.footer-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-info li {
+  margin: 5px 0;
+}
+
+/* Footer Bottom (Félagsmiðlar) - Mobile Default */
+.footer-bottom {
+  padding-top: 10px;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.footer-bottom::before {
+  content: ''; /* Tómt efni til að búa til línu */
+  display: block;
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 80%; 
+  border-top: 1px solid #fff; 
+  margin-bottom: 20px;
+}
+
+.social-media {
+  margin-top: 20px; 
+  text-align: center;
+}
+
+.social-media a {
+  margin: 0 10px;
+  font-size: 28px; 
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #f0f0f0;
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 769px) {
+  .footer-container {
+    flex-direction: row; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+  }
+
+  .footer-info,
+  .address {
+    text-align: left; 
+    width: 48%; 
+  }
+
+  .footer-info {
+    text-align: right; 
+    padding-right: 30px; 
+  }
+
+  .social-media a {
+    font-size: 24px; 
+  }
+}
