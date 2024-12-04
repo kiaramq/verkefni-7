@@ -1,0 +1,73 @@
+.image-grid {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column; 
+  align-items: center; /* Miðja myndirnar lárétt */
+  padding-bottom: 2rem;
+}
+
+.menu-image-container {
+  position: relative;
+  width: 200px; 
+  height: 200px; /* Halda jöfnum stærð */
+  overflow: hidden; /* Forðast offlæði */
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Gera myndina til að fylla umbúðirnar */
+  border-radius: 10px; /* Rundir horn */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%; /* Miðja lóðrétt */
+  left: 50%; /* Miðja lárétt */
+  transform: translate(-50%, -50%); /* Færa í nákvæma miðju */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Fylla fulla breidd umbúðanna */
+  height: 100%; /* Fylla fulla hæð umbúðanna */
+  background-color: rgba(0, 0, 0, 0.5); /* Hálf-gagnsæji lag */
+  color: white;
+  font-size: 18px; /* Stærri texti fyrir betri læsileika */
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  text-align: center; /* Miðja fyrirsagnir á síma */
+  font-size: 50px; /* Breyta stærð fyrirsagnir fyrir síma */
+  font-family: cursive;
+  margin-bottom: 20px; /* Bæta við bil á milli fyrirsagnir */
+  color: whitesmoke;
+}
+
+
+@media (min-width: 769px) {
+  .image-grid {
+    flex-direction: row; /* Lína myndir í röð */
+    gap: 10rem; /* Bæta við bili á milli mynda */
+    justify-content: center; /* Miðja myndir lárétt */
+  }
+
+  .menu-image-container {
+    width: 250px; /* Breyta í fastan breidd */
+    height: 200px; /* Fast hæð fyrir jafnvægi */
+    border-radius: 10px; /* Lítill minni kringlóttir horn fyrir skrifborð */
+  }
+
+  .image {
+    height: 100%; /* Tryggja að það fylli fasta umbúðir */
+  }
+
+  .text-overlay {
+    font-size: 20px; /* Smá minni texti fyrir skrifborð */
+    padding: 8px 16px; /* Breyta padding fyrir skrifborð */
+  }
+
+}

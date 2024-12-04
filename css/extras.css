@@ -1,0 +1,179 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f2f2f2;
+    overflow: hidden; 
+  }
+
+  .falling-foods {
+    position: absolute;
+    font-size: 3rem; 
+    font-weight: bold;
+    color: #47200B;
+    animation: fall 3s infinite ease-in-out;
+    pointer-events: none; 
+  }
+
+  /* Fun falling animation */
+  @keyframes fall {
+    0% {
+      transform: translateY(-200px) rotate(0deg); 
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg); 
+    }
+  }
+
+  .falling-foods:nth-child(1) {
+    left: 20%; 
+    animation-delay: 0s;
+  }
+
+  .falling-foods:nth-child(2) {
+    left: 40%;
+    animation-delay: 0.5s;
+  }
+
+  .falling-foods:nth-child(3) {
+    left: 60%;
+    animation-delay: 1s;
+  }
+
+  .falling-foods:nth-child(4) {
+    left: 80%;
+    animation-delay: 1.5s;
+  }
+
+  .falling-foods:nth-child(5) {
+    left: 25%;
+    animation-delay: 2s;
+  }
+
+  .falling-foods:nth-child(6) {
+    left: 55%;
+    animation-delay: 2.5s;
+  }
+
+  .falling-foods:nth-child(7) {
+    left: 75%;
+    animation-delay: 3s;
+  }
+
+body .animated-drinks, html .animated-drinks{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .animated-drinks {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #47200B;
+    text-align: center;
+    animation: bounce 2s infinite, changeColor 3s infinite;
+  }
+
+  /* Bounce animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-30px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-15px);
+    }
+  }
+
+  /* Color change animation */
+  @keyframes changeColor {
+    0% {
+      color: #47200B;
+    }
+    25% {
+      color: #E94E77;
+    }
+    50% {
+      color: #FFE600;
+    }
+    75% {
+      color: #00B2A9;
+    }
+    100% {
+      color: #47200B;
+    }
+  }
+
+  body .animated-specials, html an {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .animated-specials {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #47200B;
+    text-align: center;
+    animation: zoomIn 2s ease-out, rotate 4s infinite, changeColor 3s infinite;
+  }
+
+  /* Zoom-in effect */
+  @keyframes zoomIn {
+    0% {
+      transform: translateY(100px) scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* Rotation animation */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+
+  /* Color change animation */
+  @keyframes changeColor {
+    0% {
+      color: #47200B;
+    }
+    25% {
+      color: #FF6347;
+    }
+    50% {
+      color: #32CD32;
+    }
+    75% {
+      color: #1E90FF;
+    }
+    100% {
+      color: #47200B;
+    }
+  }
+
